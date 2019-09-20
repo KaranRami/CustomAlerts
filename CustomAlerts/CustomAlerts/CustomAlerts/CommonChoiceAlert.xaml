@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="CustomAlerts.CommonChoiceAlert"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <Frame
+            CornerRadius="10"
+            HasShadow="False"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            WidthRequest="500">
+            <StackLayout BackgroundColor="White" Spacing="20">
+                <Label x:Name="lblTitle" HorizontalOptions="Center" />
+                <Label
+                    x:Name="lblDescription"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"
+                    LineBreakMode="WordWrap" />
+                <StackLayout
+                    HorizontalOptions="Center"
+                    Orientation="Horizontal"
+                    Spacing="20">
+                    <Button
+                        x:Name="btnCancel"
+                        Clicked="Btn_Clicked"
+                        HorizontalOptions="Center" />
+                    <Button
+                        x:Name="btnOk"
+                        Clicked="Btn_Clicked"
+                        HorizontalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
