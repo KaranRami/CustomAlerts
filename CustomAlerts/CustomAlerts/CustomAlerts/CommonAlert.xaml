@@ -5,13 +5,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:d="http://xamarin.com/schemas/2014/forms/design"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
     mc:Ignorable="d">
     <ContentView.Content>
         <Frame
             CornerRadius="10"
             HasShadow="False"
-            HorizontalOptions="Center"
-            VerticalOptions="Center"
             WidthRequest="300">
             <StackLayout BackgroundColor="White" Spacing="20">
                 <Label x:Name="lblTitle" HorizontalOptions="Center" />

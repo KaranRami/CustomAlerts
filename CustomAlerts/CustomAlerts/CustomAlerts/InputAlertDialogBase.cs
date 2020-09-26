@@ -33,11 +33,13 @@ namespace CustomAlerts
             return true;
         }
 
-        // Invoced when background is clicked
+        // Invocked when background is clicked
         protected override bool OnBackgroundClicked()
         {
             // Prevent background clicked action
             //return base.OnBackgroundClicked();
+            if (ShouldOverrideBackButton)
+                PageClosedTaskCompletionSource.SetResult(default(T));
             return false;
         }
     }

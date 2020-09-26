@@ -30,10 +30,17 @@ namespace CustomAlerts
             // of type string since we need a string return
             string result = await LaunchPopup<string>(new CommonChoiceAlert("Common Alert", "This is common choice alert with Ok and Cancel Buttons.", "Ok","Cancel"));
         }
+        private async void btnActionSheetPopup_Clicked(object sender, EventArgs e)
+        {
+            // of type string since we need a string return
+            string result = await LaunchPopup<string>(new ActionSheetPopup());
+        }
 
         public async Task<T> LaunchPopup<T>(ContentView view, bool overrideBackButton = false)
         {
-            var popup = new InputAlertDialogBase<T>(view, overrideBackButton);
+            var popup = new InputAlertDialogBase<T>(view, overrideBackButton) {
+                Animation = new Rg.Plugins.Popup.Animations.MoveAnimation()
+            };
 
             // Push the page to Navigation Stack
             await PopupNavigation.Instance.PushAsync(popup);

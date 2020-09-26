@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+    x:Class="CustomAlerts.ActionSheetPopup"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    HorizontalOptions="FillAndExpand"
+    VerticalOptions="End"
+    mc:Ignorable="d">
+    <ContentView.Content>
+        <StackLayout BackgroundColor="White">
+            <Button Clicked="Button_Clicked" Text="Close" />
+            <BoxView
+                BackgroundColor="AliceBlue"
+                HeightRequest="100"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView
+                BackgroundColor="Aqua"
+                HeightRequest="100"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView
+                BackgroundColor="Black"
+                HeightRequest="100"
+                HorizontalOptions="FillAndExpand" />
+            <BoxView
+                BackgroundColor="Blue"
+                HeightRequest="100"
+                HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

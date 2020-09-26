@@ -18,6 +18,11 @@
             Clicked="BtnCommonChoiceAlert_Clicked"
             HorizontalOptions="FillAndExpand"
             Text="Show Common Alert" />
+        <Button
+            x:Name="btnActionSheetPopup"
+            Clicked="btnActionSheetPopup_Clicked"
+            HorizontalOptions="FillAndExpand"
+            Text="Show Actionsheet Popup" />
     </StackLayout>
 
 </ContentPage>
